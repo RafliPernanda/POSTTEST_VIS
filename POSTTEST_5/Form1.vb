@@ -1,5 +1,4 @@
 ﻿Public Class Form1
-    ' Memisahkan variabel path gambar untuk Tab Tambah dan Tab Edit
     Dim imgPathBaru As String = ""
     Dim imgPathEdit As String = ""
 
@@ -13,7 +12,6 @@
     End Sub
 
     Sub KosongkanInput()
-        ' Reset Tab Tambah
         txtNamaBaru.Clear()
         txtMerkBaru.Clear()
         numHargaBaru.Value = 0
@@ -23,7 +21,6 @@
         pbGambarBaru.Image = Nothing
         imgPathBaru = ""
 
-        ' Reset Bagian Edit di Tab Daftar
         txtIdEdit.Clear()
         txtNamaEdit.Clear()
         txtMerkEdit.Clear()
@@ -35,20 +32,19 @@
         imgPathEdit = ""
     End Sub
 
-    ' ================= LOGIKA TAB TAMBAH (CREATE) =================
 
     Private Sub btnPilihGambar_Click(sender As Object, e As EventArgs) Handles btnPilihGambar.Click
         Using ofd As New OpenFileDialog()
             ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png"
             If ofd.ShowDialog() = DialogResult.OK Then
                 imgPathBaru = ofd.FileName
+                If pbGambarBaru.Image IsNot Nothing Then pbGambarBaru.Image.Dispose()
                 pbGambarBaru.Image = Image.FromFile(imgPathBaru)
             End If
         End Using
     End Sub
 
     Private Sub btnSimpan_Click(sender As Object, e As EventArgs) Handles btnSimpan.Click
-        ' VALIDASI CREATE: Notes wajib diisi, Stok TIDAK BOLEH 0
         If txtNamaBaru.Text.Trim() = "" OrElse txtMerkBaru.Text.Trim() = "" OrElse txtNotesBaru.Text.Trim() = "" Then
             MessageBox.Show("Pastikan Nama, Merk, dan Notes bahan parfum sudah terisi!", "Validasi Gagal", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
@@ -64,15 +60,19 @@
             Exit Sub
         End If
 
+        If String.IsNullOrEmpty(imgPathBaru) OrElse Not IO.File.Exists(imgPathBaru) Then
+            MessageBox.Show("Silakan pilih gambar parfum terlebih dahulu sebelum menyimpan data!", "Validasi Gambar", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
         If SimpanParfum(txtNamaBaru.Text.Trim(), txtMerkBaru.Text.Trim(), numHargaBaru.Value, numStokBaru.Value, txtNotesBaru.Text.Trim(), imgPathBaru) Then
             MessageBox.Show("Parfum Berhasil Ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information)
             TampilData()
             KosongkanInput()
-            TabControl1.SelectedTab = tpDaftar ' Pindah ke daftar setelah simpan
+            TabControl1.SelectedTab = tpDaftar
         End If
     End Sub
 
-    ' ================= LOGIKA TAB DAFTAR (READ, UPDATE, DELETE) =================
 
     Private Sub txtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
         TampilData(txtSearch.Text)
@@ -88,13 +88,13 @@
             numStokEdit.Value = Convert.ToInt32(row.Cells("stok").Value)
             txtNotesEdit.Text = row.Cells("notes").Value.ToString()
 
-            ' Tampilkan gambar jika ada path-nya
             Dim path As String = row.Cells("gambar_path").Value.ToString()
             If IO.File.Exists(path) Then
                 If pbGambarEdit.Image IsNot Nothing Then pbGambarEdit.Image.Dispose()
                 pbGambarEdit.Image = Image.FromFile(path)
                 imgPathEdit = path
             Else
+                If pbGambarEdit.Image IsNot Nothing Then pbGambarEdit.Image.Dispose()
                 pbGambarEdit.Image = Nothing
                 imgPathEdit = ""
             End If
@@ -118,7 +118,6 @@
             Exit Sub
         End If
 
-        ' VALIDASI UPDATE: Notes wajib diisi, Stok BOLEH 0
         If txtNamaEdit.Text.Trim() = "" OrElse txtMerkEdit.Text.Trim() = "" OrElse txtNotesEdit.Text.Trim() = "" Then
             MessageBox.Show("Pastikan Nama, Merk, dan Notes bahan parfum tidak kosong!", "Validasi Gagal", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
@@ -129,8 +128,6 @@
             Exit Sub
         End If
 
-        ' Catatan: numStokEdit tidak di-check jika 0, karena saat update stok boleh 0 (habis).
-
         If UbahParfum(Convert.ToInt32(txtIdEdit.Text), txtNamaEdit.Text.Trim(), txtMerkEdit.Text.Trim(), numHargaEdit.Value, Convert.ToInt32(numStokEdit.Value), txtNotesEdit.Text.Trim(), imgPathEdit) Then
             MessageBox.Show("Data Berhasil Diperbarui!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information)
             TampilData()
@@ -139,7 +136,8 @@
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         If txtIdEdit.Text.Trim() = "" Then Return
-        If MessageBox.Show("Apakah Anda yakin ingin menghapus parfum ini?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+
+        If MessageBox.Show("Apakah Anda yakin ingin menghapus parfum ini?", "Konfirmasi Hapus", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
             If HapusParfum(Convert.ToInt32(txtIdEdit.Text)) Then
                 MessageBox.Show("Data Berhasil Dihapus!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 TampilData()
@@ -148,7 +146,7 @@
         End If
     End Sub
 
-    ' --- MENU STRIP ACTIONS ---
+
     Private Sub DashboardToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DashboardToolStripMenuItem.Click
         KosongkanInput()
         TampilData()

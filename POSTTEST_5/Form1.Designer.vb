@@ -17,486 +17,576 @@ Partial Class Form1
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.DashboardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.KeluarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.tpTambah = New System.Windows.Forms.TabPage()
-        Me.lblTitleTambah = New System.Windows.Forms.Label()
-        Me.lblNamaBaru = New System.Windows.Forms.Label()
-        Me.txtNamaBaru = New System.Windows.Forms.TextBox()
-        Me.lblMerkBaru = New System.Windows.Forms.Label()
-        Me.txtMerkBaru = New System.Windows.Forms.TextBox()
-        Me.lblHargaBaru = New System.Windows.Forms.Label()
-        Me.numHargaBaru = New System.Windows.Forms.NumericUpDown()
-        Me.lblStokBaru = New System.Windows.Forms.Label()
-        Me.numStokBaru = New System.Windows.Forms.NumericUpDown()
-        Me.lblNotesBaru = New System.Windows.Forms.Label()
-        Me.txtNotesBaru = New System.Windows.Forms.TextBox()
-        Me.pbGambarBaru = New System.Windows.Forms.PictureBox()
-        Me.btnPilihGambar = New System.Windows.Forms.Button()
-        Me.btnSimpan = New System.Windows.Forms.Button()
-        Me.tpDaftar = New System.Windows.Forms.TabPage()
-        Me.lblSearch = New System.Windows.Forms.Label()
-        Me.txtSearch = New System.Windows.Forms.TextBox()
-        Me.dgvParfum = New System.Windows.Forms.DataGridView()
-        Me.gbEdit = New System.Windows.Forms.GroupBox()
-        Me.lblIdEdit = New System.Windows.Forms.Label()
-        Me.txtIdEdit = New System.Windows.Forms.TextBox()
-        Me.lblNamaEdit = New System.Windows.Forms.Label()
-        Me.txtNamaEdit = New System.Windows.Forms.TextBox()
-        Me.lblMerkEdit = New System.Windows.Forms.Label()
-        Me.txtMerkEdit = New System.Windows.Forms.TextBox()
-        Me.lblHargaEdit = New System.Windows.Forms.Label()
-        Me.numHargaEdit = New System.Windows.Forms.NumericUpDown()
-        Me.lblStokEdit = New System.Windows.Forms.Label()
-        Me.numStokEdit = New System.Windows.Forms.NumericUpDown()
-        Me.lblNotesEdit = New System.Windows.Forms.Label()
-        Me.txtNotesEdit = New System.Windows.Forms.TextBox()
-        Me.pbGambarEdit = New System.Windows.Forms.PictureBox()
-        Me.btnPilihGambarEdit = New System.Windows.Forms.Button()
-        Me.btnUpdate = New System.Windows.Forms.Button()
-        Me.btnDelete = New System.Windows.Forms.Button()
-        Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.MenuStrip1.SuspendLayout()
-        Me.TabControl1.SuspendLayout()
-        Me.tpTambah.SuspendLayout()
-        CType(Me.numHargaBaru, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.numStokBaru, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbGambarBaru, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.tpDaftar.SuspendLayout()
-        CType(Me.dgvParfum, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.gbEdit.SuspendLayout()
-        CType(Me.numHargaEdit, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.numStokEdit, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbGambarEdit, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DashboardToolStripMenuItem, Me.KeluarToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'DashboardToolStripMenuItem
-        '
-        Me.DashboardToolStripMenuItem.Name = "DashboardToolStripMenuItem"
-        Me.DashboardToolStripMenuItem.Size = New System.Drawing.Size(96, 24)
-        Me.DashboardToolStripMenuItem.Text = "Dashboard"
-        '
-        'KeluarToolStripMenuItem
-        '
-        Me.KeluarToolStripMenuItem.Name = "KeluarToolStripMenuItem"
-        Me.KeluarToolStripMenuItem.Size = New System.Drawing.Size(65, 24)
-        Me.KeluarToolStripMenuItem.Text = "Keluar"
-        '
-        'TabControl1
-        '
-        Me.TabControl1.Controls.Add(Me.tpTambah)
-        Me.TabControl1.Controls.Add(Me.tpDaftar)
-        Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TabControl1.Location = New System.Drawing.Point(0, 28)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(800, 772)
-        Me.TabControl1.TabIndex = 1
-        '
-        'tpTambah
-        '
-        Me.tpTambah.Controls.Add(Me.lblTitleTambah)
-        Me.tpTambah.Controls.Add(Me.lblNamaBaru)
-        Me.tpTambah.Controls.Add(Me.txtNamaBaru)
-        Me.tpTambah.Controls.Add(Me.lblMerkBaru)
-        Me.tpTambah.Controls.Add(Me.txtMerkBaru)
-        Me.tpTambah.Controls.Add(Me.lblHargaBaru)
-        Me.tpTambah.Controls.Add(Me.numHargaBaru)
-        Me.tpTambah.Controls.Add(Me.lblStokBaru)
-        Me.tpTambah.Controls.Add(Me.numStokBaru)
-        Me.tpTambah.Controls.Add(Me.lblNotesBaru)
-        Me.tpTambah.Controls.Add(Me.txtNotesBaru)
-        Me.tpTambah.Controls.Add(Me.pbGambarBaru)
-        Me.tpTambah.Controls.Add(Me.btnPilihGambar)
-        Me.tpTambah.Controls.Add(Me.btnSimpan)
-        Me.tpTambah.Location = New System.Drawing.Point(4, 29)
-        Me.tpTambah.Name = "tpTambah"
-        Me.tpTambah.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpTambah.Size = New System.Drawing.Size(792, 739)
-        Me.tpTambah.TabIndex = 0
-        Me.tpTambah.Text = "Tambah Parfum Baru"
-        Me.tpTambah.UseVisualStyleBackColor = True
-        '
-        'lblTitleTambah
-        '
-        Me.lblTitleTambah.AutoSize = True
-        Me.lblTitleTambah.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitleTambah.Location = New System.Drawing.Point(20, 20)
-        Me.lblTitleTambah.Name = "lblTitleTambah"
-        Me.lblTitleTambah.Size = New System.Drawing.Size(264, 37)
-        Me.lblTitleTambah.TabIndex = 0
-        Me.lblTitleTambah.Text = "Input Data Parfum"
-        '
-        'lblNamaBaru
-        '
-        Me.lblNamaBaru.AutoSize = True
-        Me.lblNamaBaru.Location = New System.Drawing.Point(20, 80)
-        Me.lblNamaBaru.Name = "lblNamaBaru"
-        Me.lblNamaBaru.Size = New System.Drawing.Size(99, 20)
-        Me.lblNamaBaru.TabIndex = 1
-        Me.lblNamaBaru.Text = "Nama Parfum"
-        '
-        'txtNamaBaru
-        '
-        Me.txtNamaBaru.Location = New System.Drawing.Point(130, 77)
-        Me.txtNamaBaru.Name = "txtNamaBaru"
-        Me.txtNamaBaru.Size = New System.Drawing.Size(250, 27)
-        Me.txtNamaBaru.TabIndex = 2
-        '
-        'lblMerkBaru
-        '
-        Me.lblMerkBaru.AutoSize = True
-        Me.lblMerkBaru.Location = New System.Drawing.Point(20, 120)
-        Me.lblMerkBaru.Name = "lblMerkBaru"
-        Me.lblMerkBaru.Size = New System.Drawing.Size(42, 20)
-        Me.lblMerkBaru.TabIndex = 3
-        Me.lblMerkBaru.Text = "Merk"
-        '
-        'txtMerkBaru
-        '
-        Me.txtMerkBaru.Location = New System.Drawing.Point(130, 117)
-        Me.txtMerkBaru.Name = "txtMerkBaru"
-        Me.txtMerkBaru.Size = New System.Drawing.Size(250, 27)
-        Me.txtMerkBaru.TabIndex = 4
-        '
-        'lblHargaBaru
-        '
-        Me.lblHargaBaru.AutoSize = True
-        Me.lblHargaBaru.Location = New System.Drawing.Point(20, 160)
-        Me.lblHargaBaru.Name = "lblHargaBaru"
-        Me.lblHargaBaru.Size = New System.Drawing.Size(50, 20)
-        Me.lblHargaBaru.TabIndex = 5
-        Me.lblHargaBaru.Text = "Harga"
-        '
-        'numHargaBaru
-        '
-        Me.numHargaBaru.Location = New System.Drawing.Point(130, 158)
-        Me.numHargaBaru.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
-        Me.numHargaBaru.Name = "numHargaBaru"
-        Me.numHargaBaru.Size = New System.Drawing.Size(150, 27)
-        Me.numHargaBaru.TabIndex = 6
-        '
-        'lblStokBaru
-        '
-        Me.lblStokBaru.AutoSize = True
-        Me.lblStokBaru.Location = New System.Drawing.Point(20, 200)
-        Me.lblStokBaru.Name = "lblStokBaru"
-        Me.lblStokBaru.Size = New System.Drawing.Size(38, 20)
-        Me.lblStokBaru.TabIndex = 7
-        Me.lblStokBaru.Text = "Stok"
-        '
-        'numStokBaru
-        '
-        Me.numStokBaru.Location = New System.Drawing.Point(130, 198)
-        Me.numStokBaru.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
-        Me.numStokBaru.Name = "numStokBaru"
-        Me.numStokBaru.Size = New System.Drawing.Size(100, 27)
-        Me.numStokBaru.TabIndex = 8
-        '
-        'lblNotesBaru
-        '
-        Me.lblNotesBaru.AutoSize = True
-        Me.lblNotesBaru.Location = New System.Drawing.Point(20, 240)
-        Me.lblNotesBaru.Name = "lblNotesBaru"
-        Me.lblNotesBaru.Size = New System.Drawing.Size(48, 20)
-        Me.lblNotesBaru.TabIndex = 9
-        Me.lblNotesBaru.Text = "Notes"
-        '
-        'txtNotesBaru
-        '
-        Me.txtNotesBaru.Location = New System.Drawing.Point(130, 237)
-        Me.txtNotesBaru.Multiline = True
-        Me.txtNotesBaru.Name = "txtNotesBaru"
-        Me.txtNotesBaru.Size = New System.Drawing.Size(250, 100)
-        Me.txtNotesBaru.TabIndex = 10
-        '
-        'pbGambarBaru
-        '
-        Me.pbGambarBaru.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.pbGambarBaru.Location = New System.Drawing.Point(420, 77)
-        Me.pbGambarBaru.Name = "pbGambarBaru"
-        Me.pbGambarBaru.Size = New System.Drawing.Size(250, 250)
-        Me.pbGambarBaru.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbGambarBaru.TabIndex = 11
-        Me.pbGambarBaru.TabStop = False
-        '
-        'btnPilihGambar
-        '
-        Me.btnPilihGambar.Location = New System.Drawing.Point(420, 337)
-        Me.btnPilihGambar.Name = "btnPilihGambar"
-        Me.btnPilihGambar.Size = New System.Drawing.Size(120, 35)
-        Me.btnPilihGambar.TabIndex = 12
-        Me.btnPilihGambar.Text = "Pilih Gambar"
-        Me.btnPilihGambar.UseVisualStyleBackColor = True
-        '
-        'btnSimpan
-        '
-        Me.btnSimpan.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSimpan.Location = New System.Drawing.Point(130, 360)
-        Me.btnSimpan.Name = "btnSimpan"
-        Me.btnSimpan.Size = New System.Drawing.Size(120, 40)
-        Me.btnSimpan.TabIndex = 13
-        Me.btnSimpan.Text = "Simpan Data"
-        Me.btnSimpan.UseVisualStyleBackColor = True
-        '
-        'tpDaftar
-        '
-        Me.tpDaftar.Controls.Add(Me.lblSearch)
-        Me.tpDaftar.Controls.Add(Me.txtSearch)
-        Me.tpDaftar.Controls.Add(Me.dgvParfum)
-        Me.tpDaftar.Controls.Add(Me.gbEdit)
-        Me.tpDaftar.Location = New System.Drawing.Point(4, 29)
-        Me.tpDaftar.Name = "tpDaftar"
-        Me.tpDaftar.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpDaftar.Size = New System.Drawing.Size(792, 739)
-        Me.tpDaftar.TabIndex = 1
-        Me.tpDaftar.Text = "Daftar & Kelola Parfum"
-        Me.tpDaftar.UseVisualStyleBackColor = True
-        '
-        'lblSearch
-        '
-        Me.lblSearch.AutoSize = True
-        Me.lblSearch.Location = New System.Drawing.Point(20, 20)
-        Me.lblSearch.Name = "lblSearch"
-        Me.lblSearch.Size = New System.Drawing.Size(71, 20)
-        Me.lblSearch.TabIndex = 0
-        Me.lblSearch.Text = "Cari Data"
-        '
-        'txtSearch
-        '
-        Me.txtSearch.Location = New System.Drawing.Point(100, 17)
-        Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(300, 27)
-        Me.txtSearch.TabIndex = 1
-        '
-        'dgvParfum
-        '
-        Me.dgvParfum.AllowUserToAddRows = False
-        Me.dgvParfum.AllowUserToDeleteRows = False
-        Me.dgvParfum.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvParfum.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvParfum.Location = New System.Drawing.Point(20, 60)
-        Me.dgvParfum.Name = "dgvParfum"
-        Me.dgvParfum.ReadOnly = True
-        Me.dgvParfum.RowHeadersWidth = 51
-        Me.dgvParfum.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvParfum.Size = New System.Drawing.Size(750, 250)
-        Me.dgvParfum.TabIndex = 2
-        '
-        'gbEdit
-        '
-        Me.gbEdit.Controls.Add(Me.lblIdEdit)
-        Me.gbEdit.Controls.Add(Me.txtIdEdit)
-        Me.gbEdit.Controls.Add(Me.lblNamaEdit)
-        Me.gbEdit.Controls.Add(Me.txtNamaEdit)
-        Me.gbEdit.Controls.Add(Me.lblMerkEdit)
-        Me.gbEdit.Controls.Add(Me.txtMerkEdit)
-        Me.gbEdit.Controls.Add(Me.lblHargaEdit)
-        Me.gbEdit.Controls.Add(Me.numHargaEdit)
-        Me.gbEdit.Controls.Add(Me.lblStokEdit)
-        Me.gbEdit.Controls.Add(Me.numStokEdit)
-        Me.gbEdit.Controls.Add(Me.lblNotesEdit)
-        Me.gbEdit.Controls.Add(Me.txtNotesEdit)
-        Me.gbEdit.Controls.Add(Me.pbGambarEdit)
-        Me.gbEdit.Controls.Add(Me.btnPilihGambarEdit)
-        Me.gbEdit.Controls.Add(Me.btnUpdate)
-        Me.gbEdit.Controls.Add(Me.btnDelete)
-        Me.gbEdit.Location = New System.Drawing.Point(20, 320)
-        Me.gbEdit.Name = "gbEdit"
-        Me.gbEdit.Size = New System.Drawing.Size(750, 400)
-        Me.gbEdit.TabIndex = 3
-        Me.gbEdit.TabStop = False
-        Me.gbEdit.Text = "Edit / Hapus Data"
-        '
-        'lblIdEdit
-        '
-        Me.lblIdEdit.AutoSize = True
-        Me.lblIdEdit.Location = New System.Drawing.Point(20, 40)
-        Me.lblIdEdit.Name = "lblIdEdit"
-        Me.lblIdEdit.Size = New System.Drawing.Size(74, 20)
-        Me.lblIdEdit.TabIndex = 0
-        Me.lblIdEdit.Text = "ID Parfum"
-        '
-        'txtIdEdit
-        '
-        Me.txtIdEdit.Location = New System.Drawing.Point(130, 37)
-        Me.txtIdEdit.Name = "txtIdEdit"
-        Me.txtIdEdit.ReadOnly = True
-        Me.txtIdEdit.Size = New System.Drawing.Size(100, 27)
-        Me.txtIdEdit.TabIndex = 1
-        '
-        'lblNamaEdit
-        '
-        Me.lblNamaEdit.AutoSize = True
-        Me.lblNamaEdit.Location = New System.Drawing.Point(20, 80)
-        Me.lblNamaEdit.Name = "lblNamaEdit"
-        Me.lblNamaEdit.Size = New System.Drawing.Size(99, 20)
-        Me.lblNamaEdit.TabIndex = 2
-        Me.lblNamaEdit.Text = "Nama Parfum"
-        '
-        'txtNamaEdit
-        '
-        Me.txtNamaEdit.Location = New System.Drawing.Point(130, 77)
-        Me.txtNamaEdit.Name = "txtNamaEdit"
-        Me.txtNamaEdit.Size = New System.Drawing.Size(250, 27)
-        Me.txtNamaEdit.TabIndex = 3
-        '
-        'lblMerkEdit
-        '
-        Me.lblMerkEdit.AutoSize = True
-        Me.lblMerkEdit.Location = New System.Drawing.Point(20, 120)
-        Me.lblMerkEdit.Name = "lblMerkEdit"
-        Me.lblMerkEdit.Size = New System.Drawing.Size(42, 20)
-        Me.lblMerkEdit.TabIndex = 4
-        Me.lblMerkEdit.Text = "Merk"
-        '
-        'txtMerkEdit
-        '
-        Me.txtMerkEdit.Location = New System.Drawing.Point(130, 117)
-        Me.txtMerkEdit.Name = "txtMerkEdit"
-        Me.txtMerkEdit.Size = New System.Drawing.Size(250, 27)
-        Me.txtMerkEdit.TabIndex = 5
-        '
-        'lblHargaEdit
-        '
-        Me.lblHargaEdit.AutoSize = True
-        Me.lblHargaEdit.Location = New System.Drawing.Point(20, 160)
-        Me.lblHargaEdit.Name = "lblHargaEdit"
-        Me.lblHargaEdit.Size = New System.Drawing.Size(50, 20)
-        Me.lblHargaEdit.TabIndex = 6
-        Me.lblHargaEdit.Text = "Harga"
-        '
-        'numHargaEdit
-        '
-        Me.numHargaEdit.Location = New System.Drawing.Point(130, 158)
-        Me.numHargaEdit.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
-        Me.numHargaEdit.Name = "numHargaEdit"
-        Me.numHargaEdit.Size = New System.Drawing.Size(150, 27)
-        Me.numHargaEdit.TabIndex = 7
-        '
-        'lblStokEdit
-        '
-        Me.lblStokEdit.AutoSize = True
-        Me.lblStokEdit.Location = New System.Drawing.Point(20, 200)
-        Me.lblStokEdit.Name = "lblStokEdit"
-        Me.lblStokEdit.Size = New System.Drawing.Size(38, 20)
-        Me.lblStokEdit.TabIndex = 8
-        Me.lblStokEdit.Text = "Stok"
-        '
-        'numStokEdit
-        '
-        Me.numStokEdit.Location = New System.Drawing.Point(130, 198)
-        Me.numStokEdit.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
-        Me.numStokEdit.Name = "numStokEdit"
-        Me.numStokEdit.Size = New System.Drawing.Size(100, 27)
-        Me.numStokEdit.TabIndex = 9
-        '
-        'lblNotesEdit
-        '
-        Me.lblNotesEdit.AutoSize = True
-        Me.lblNotesEdit.Location = New System.Drawing.Point(20, 240)
-        Me.lblNotesEdit.Name = "lblNotesEdit"
-        Me.lblNotesEdit.Size = New System.Drawing.Size(48, 20)
-        Me.lblNotesEdit.TabIndex = 10
-        Me.lblNotesEdit.Text = "Notes"
-        '
-        'txtNotesEdit
-        '
-        Me.txtNotesEdit.Location = New System.Drawing.Point(130, 237)
-        Me.txtNotesEdit.Multiline = True
-        Me.txtNotesEdit.Name = "txtNotesEdit"
-        Me.txtNotesEdit.Size = New System.Drawing.Size(250, 100)
-        Me.txtNotesEdit.TabIndex = 11
-        '
-        'pbGambarEdit
-        '
-        Me.pbGambarEdit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.pbGambarEdit.Location = New System.Drawing.Point(420, 37)
-        Me.pbGambarEdit.Name = "pbGambarEdit"
-        Me.pbGambarEdit.Size = New System.Drawing.Size(200, 200)
-        Me.pbGambarEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbGambarEdit.TabIndex = 12
-        Me.pbGambarEdit.TabStop = False
-        '
-        'btnPilihGambarEdit
-        '
-        Me.btnPilihGambarEdit.Location = New System.Drawing.Point(420, 250)
-        Me.btnPilihGambarEdit.Name = "btnPilihGambarEdit"
-        Me.btnPilihGambarEdit.Size = New System.Drawing.Size(120, 35)
-        Me.btnPilihGambarEdit.TabIndex = 15
-        Me.btnPilihGambarEdit.Text = "Ubah Gambar"
-        Me.btnPilihGambarEdit.UseVisualStyleBackColor = True
-        '
-        'btnUpdate
-        '
-        Me.btnUpdate.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUpdate.Location = New System.Drawing.Point(640, 250)
-        Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Size = New System.Drawing.Size(90, 40)
-        Me.btnUpdate.TabIndex = 13
-        Me.btnUpdate.Text = "Update"
-        Me.btnUpdate.UseVisualStyleBackColor = True
-        '
-        'btnDelete
-        '
-        Me.btnDelete.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelete.ForeColor = System.Drawing.Color.Red
-        Me.btnDelete.Location = New System.Drawing.Point(640, 300)
-        Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(90, 40)
-        Me.btnDelete.TabIndex = 14
-        Me.btnDelete.Text = "Hapus"
-        Me.btnDelete.UseVisualStyleBackColor = True
-        '
-        'ErrorProvider1
-        '
-        Me.ErrorProvider1.ContainerControl = Me
-        '
-        'Form1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 800)
-        Me.Controls.Add(Me.TabControl1)
-        Me.Controls.Add(Me.MenuStrip1)
-        Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "Form1"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Aplikasi Manajemen Toko Parfum"
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
-        Me.TabControl1.ResumeLayout(False)
-        Me.tpTambah.ResumeLayout(False)
-        Me.tpTambah.PerformLayout()
-        CType(Me.numHargaBaru, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.numStokBaru, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbGambarBaru, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.tpDaftar.ResumeLayout(False)
-        Me.tpDaftar.PerformLayout()
-        CType(Me.dgvParfum, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.gbEdit.ResumeLayout(False)
-        Me.gbEdit.PerformLayout()
-        CType(Me.numHargaEdit, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.numStokEdit, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbGambarEdit, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        components = New ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        MenuStrip1 = New MenuStrip()
+        DashboardToolStripMenuItem = New ToolStripMenuItem()
+        KeluarToolStripMenuItem = New ToolStripMenuItem()
+        TabControl1 = New TabControl()
+        tpTambah = New TabPage()
+        lblTitleTambah = New Label()
+        lblNamaBaru = New Label()
+        txtNamaBaru = New TextBox()
+        lblMerkBaru = New Label()
+        txtMerkBaru = New TextBox()
+        lblHargaBaru = New Label()
+        numHargaBaru = New NumericUpDown()
+        lblStokBaru = New Label()
+        numStokBaru = New NumericUpDown()
+        lblNotesBaru = New Label()
+        txtNotesBaru = New TextBox()
+        pbGambarBaru = New PictureBox()
+        btnPilihGambar = New Button()
+        btnSimpan = New Button()
+        tpDaftar = New TabPage()
+        lblSearch = New Label()
+        txtSearch = New TextBox()
+        dgvParfum = New DataGridView()
+        gbEdit = New GroupBox()
+        lblIdEdit = New Label()
+        txtIdEdit = New TextBox()
+        lblNamaEdit = New Label()
+        txtNamaEdit = New TextBox()
+        lblMerkEdit = New Label()
+        txtMerkEdit = New TextBox()
+        lblHargaEdit = New Label()
+        numHargaEdit = New NumericUpDown()
+        lblStokEdit = New Label()
+        numStokEdit = New NumericUpDown()
+        lblNotesEdit = New Label()
+        txtNotesEdit = New TextBox()
+        pbGambarEdit = New PictureBox()
+        btnPilihGambarEdit = New Button()
+        btnUpdate = New Button()
+        btnDelete = New Button()
+        ErrorProvider1 = New ErrorProvider(components)
+        MenuStrip1.SuspendLayout()
+        TabControl1.SuspendLayout()
+        tpTambah.SuspendLayout()
+        CType(numHargaBaru, ComponentModel.ISupportInitialize).BeginInit()
+        CType(numStokBaru, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pbGambarBaru, ComponentModel.ISupportInitialize).BeginInit()
+        tpDaftar.SuspendLayout()
+        CType(dgvParfum, ComponentModel.ISupportInitialize).BeginInit()
+        gbEdit.SuspendLayout()
+        CType(numHargaEdit, ComponentModel.ISupportInitialize).BeginInit()
+        CType(numStokEdit, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pbGambarEdit, ComponentModel.ISupportInitialize).BeginInit()
+        CType(ErrorProvider1, ComponentModel.ISupportInitialize).BeginInit()
+        SuspendLayout()
+        ' 
+        ' MenuStrip1
+        ' 
+        MenuStrip1.BackColor = Color.White
+        MenuStrip1.ImageScalingSize = New Size(20, 20)
+        MenuStrip1.Items.AddRange(New ToolStripItem() {DashboardToolStripMenuItem, KeluarToolStripMenuItem})
+        MenuStrip1.Location = New Point(0, 0)
+        MenuStrip1.Name = "MenuStrip1"
+        MenuStrip1.Size = New Size(800, 28)
+        MenuStrip1.TabIndex = 0
+        MenuStrip1.Text = "MenuStrip1"
+        ' 
+        ' DashboardToolStripMenuItem
+        ' 
+        DashboardToolStripMenuItem.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold)
+        DashboardToolStripMenuItem.Name = "DashboardToolStripMenuItem"
+        DashboardToolStripMenuItem.Size = New Size(98, 24)
+        DashboardToolStripMenuItem.Text = "Dashboard"
+        ' 
+        ' KeluarToolStripMenuItem
+        ' 
+        KeluarToolStripMenuItem.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold)
+        KeluarToolStripMenuItem.ForeColor = Color.Crimson
+        KeluarToolStripMenuItem.Name = "KeluarToolStripMenuItem"
+        KeluarToolStripMenuItem.Size = New Size(67, 24)
+        KeluarToolStripMenuItem.Text = "Keluar"
+        ' 
+        ' TabControl1
+        ' 
+        TabControl1.Controls.Add(tpTambah)
+        TabControl1.Controls.Add(tpDaftar)
+        TabControl1.Dock = DockStyle.Fill
+        TabControl1.ItemSize = New Size(150, 35)
+        TabControl1.Location = New Point(0, 28)
+        TabControl1.Name = "TabControl1"
+        TabControl1.SelectedIndex = 0
+        TabControl1.Size = New Size(800, 772)
+        TabControl1.SizeMode = TabSizeMode.Fixed
+        TabControl1.TabIndex = 1
+        ' 
+        ' tpTambah
+        ' 
+        tpTambah.BackColor = Color.FromArgb(CByte(245), CByte(247), CByte(250))
+        tpTambah.Controls.Add(lblTitleTambah)
+        tpTambah.Controls.Add(lblNamaBaru)
+        tpTambah.Controls.Add(txtNamaBaru)
+        tpTambah.Controls.Add(lblMerkBaru)
+        tpTambah.Controls.Add(txtMerkBaru)
+        tpTambah.Controls.Add(lblHargaBaru)
+        tpTambah.Controls.Add(numHargaBaru)
+        tpTambah.Controls.Add(lblStokBaru)
+        tpTambah.Controls.Add(numStokBaru)
+        tpTambah.Controls.Add(lblNotesBaru)
+        tpTambah.Controls.Add(txtNotesBaru)
+        tpTambah.Controls.Add(pbGambarBaru)
+        tpTambah.Controls.Add(btnPilihGambar)
+        tpTambah.Controls.Add(btnSimpan)
+        tpTambah.Location = New Point(4, 39)
+        tpTambah.Name = "tpTambah"
+        tpTambah.Padding = New Padding(3)
+        tpTambah.Size = New Size(792, 729)
+        tpTambah.TabIndex = 0
+        tpTambah.Text = "Tambah Parfum Baru"
+        ' 
+        ' lblTitleTambah
+        ' 
+        lblTitleTambah.AutoSize = True
+        lblTitleTambah.Font = New Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTitleTambah.ForeColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
+        lblTitleTambah.Location = New Point(20, 20)
+        lblTitleTambah.Name = "lblTitleTambah"
+        lblTitleTambah.Size = New Size(263, 38)
+        lblTitleTambah.TabIndex = 0
+        lblTitleTambah.Text = "Input Data Parfum"
+        ' 
+        ' lblNamaBaru
+        ' 
+        lblNamaBaru.AutoSize = True
+        lblNamaBaru.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold)
+        lblNamaBaru.Location = New Point(20, 80)
+        lblNamaBaru.Name = "lblNamaBaru"
+        lblNamaBaru.Size = New Size(104, 20)
+        lblNamaBaru.TabIndex = 1
+        lblNamaBaru.Text = "Nama Parfum"
+        ' 
+        ' txtNamaBaru
+        ' 
+        txtNamaBaru.BorderStyle = BorderStyle.FixedSingle
+        txtNamaBaru.Location = New Point(130, 77)
+        txtNamaBaru.Name = "txtNamaBaru"
+        txtNamaBaru.Size = New Size(250, 27)
+        txtNamaBaru.TabIndex = 2
+        ' 
+        ' lblMerkBaru
+        ' 
+        lblMerkBaru.AutoSize = True
+        lblMerkBaru.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold)
+        lblMerkBaru.Location = New Point(20, 120)
+        lblMerkBaru.Name = "lblMerkBaru"
+        lblMerkBaru.Size = New Size(45, 20)
+        lblMerkBaru.TabIndex = 3
+        lblMerkBaru.Text = "Merk"
+        ' 
+        ' txtMerkBaru
+        ' 
+        txtMerkBaru.BorderStyle = BorderStyle.FixedSingle
+        txtMerkBaru.Location = New Point(130, 117)
+        txtMerkBaru.Name = "txtMerkBaru"
+        txtMerkBaru.Size = New Size(250, 27)
+        txtMerkBaru.TabIndex = 4
+        ' 
+        ' lblHargaBaru
+        ' 
+        lblHargaBaru.AutoSize = True
+        lblHargaBaru.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold)
+        lblHargaBaru.Location = New Point(20, 160)
+        lblHargaBaru.Name = "lblHargaBaru"
+        lblHargaBaru.Size = New Size(51, 20)
+        lblHargaBaru.TabIndex = 5
+        lblHargaBaru.Text = "Harga"
+        ' 
+        ' numHargaBaru
+        ' 
+        numHargaBaru.BorderStyle = BorderStyle.FixedSingle
+        numHargaBaru.Location = New Point(130, 158)
+        numHargaBaru.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
+        numHargaBaru.Name = "numHargaBaru"
+        numHargaBaru.Size = New Size(150, 27)
+        numHargaBaru.TabIndex = 6
+        ' 
+        ' lblStokBaru
+        ' 
+        lblStokBaru.AutoSize = True
+        lblStokBaru.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold)
+        lblStokBaru.Location = New Point(20, 200)
+        lblStokBaru.Name = "lblStokBaru"
+        lblStokBaru.Size = New Size(39, 20)
+        lblStokBaru.TabIndex = 7
+        lblStokBaru.Text = "Stok"
+        ' 
+        ' numStokBaru
+        ' 
+        numStokBaru.BorderStyle = BorderStyle.FixedSingle
+        numStokBaru.Location = New Point(130, 198)
+        numStokBaru.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        numStokBaru.Name = "numStokBaru"
+        numStokBaru.Size = New Size(100, 27)
+        numStokBaru.TabIndex = 8
+        ' 
+        ' lblNotesBaru
+        ' 
+        lblNotesBaru.AutoSize = True
+        lblNotesBaru.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold)
+        lblNotesBaru.Location = New Point(20, 240)
+        lblNotesBaru.Name = "lblNotesBaru"
+        lblNotesBaru.Size = New Size(49, 20)
+        lblNotesBaru.TabIndex = 9
+        lblNotesBaru.Text = "Notes"
+        ' 
+        ' txtNotesBaru
+        ' 
+        txtNotesBaru.BorderStyle = BorderStyle.FixedSingle
+        txtNotesBaru.Location = New Point(130, 237)
+        txtNotesBaru.Multiline = True
+        txtNotesBaru.Name = "txtNotesBaru"
+        txtNotesBaru.Size = New Size(250, 100)
+        txtNotesBaru.TabIndex = 10
+        ' 
+        ' pbGambarBaru
+        ' 
+        pbGambarBaru.BackColor = Color.White
+        pbGambarBaru.BorderStyle = BorderStyle.FixedSingle
+        pbGambarBaru.Location = New Point(420, 77)
+        pbGambarBaru.Name = "pbGambarBaru"
+        pbGambarBaru.Size = New Size(260, 260)
+        pbGambarBaru.SizeMode = PictureBoxSizeMode.Zoom
+        pbGambarBaru.TabIndex = 11
+        pbGambarBaru.TabStop = False
+        ' 
+        ' btnPilihGambar
+        ' 
+        btnPilihGambar.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        btnPilihGambar.Cursor = Cursors.Hand
+        btnPilihGambar.FlatAppearance.BorderSize = 0
+        btnPilihGambar.FlatStyle = FlatStyle.Flat
+        btnPilihGambar.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold)
+        btnPilihGambar.Location = New Point(420, 347)
+        btnPilihGambar.Name = "btnPilihGambar"
+        btnPilihGambar.Size = New Size(260, 35)
+        btnPilihGambar.TabIndex = 12
+        btnPilihGambar.Text = "Pilih Gambar"
+        btnPilihGambar.UseVisualStyleBackColor = False
+        ' 
+        ' btnSimpan
+        ' 
+        btnSimpan.BackColor = Color.MediumSeaGreen
+        btnSimpan.Cursor = Cursors.Hand
+        btnSimpan.FlatAppearance.BorderSize = 0
+        btnSimpan.FlatStyle = FlatStyle.Flat
+        btnSimpan.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSimpan.ForeColor = Color.White
+        btnSimpan.Location = New Point(130, 350)
+        btnSimpan.Name = "btnSimpan"
+        btnSimpan.Size = New Size(250, 45)
+        btnSimpan.TabIndex = 13
+        btnSimpan.Text = "SIMPAN DATA"
+        btnSimpan.UseVisualStyleBackColor = False
+        ' 
+        ' tpDaftar
+        ' 
+        tpDaftar.BackColor = Color.FromArgb(CByte(245), CByte(247), CByte(250))
+        tpDaftar.Controls.Add(lblSearch)
+        tpDaftar.Controls.Add(txtSearch)
+        tpDaftar.Controls.Add(dgvParfum)
+        tpDaftar.Controls.Add(gbEdit)
+        tpDaftar.Location = New Point(4, 39)
+        tpDaftar.Name = "tpDaftar"
+        tpDaftar.Padding = New Padding(3)
+        tpDaftar.Size = New Size(792, 729)
+        tpDaftar.TabIndex = 1
+        tpDaftar.Text = "Daftar & Kelola Parfum"
+        ' 
+        ' lblSearch
+        ' 
+        lblSearch.AutoSize = True
+        lblSearch.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold)
+        lblSearch.Location = New Point(20, 20)
+        lblSearch.Name = "lblSearch"
+        lblSearch.Size = New Size(72, 20)
+        lblSearch.TabIndex = 0
+        lblSearch.Text = "Cari Data"
+        ' 
+        ' txtSearch
+        ' 
+        txtSearch.BorderStyle = BorderStyle.FixedSingle
+        txtSearch.Location = New Point(100, 17)
+        txtSearch.Name = "txtSearch"
+        txtSearch.Size = New Size(300, 27)
+        txtSearch.TabIndex = 1
+        ' 
+        ' dgvParfum
+        ' 
+        dgvParfum.AllowUserToAddRows = False
+        dgvParfum.AllowUserToDeleteRows = False
+        dgvParfum.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvParfum.BackgroundColor = Color.White
+        dgvParfum.BorderStyle = BorderStyle.None
+        dgvParfum.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
+        dgvParfum.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
+        DataGridViewCellStyle1.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle1.ForeColor = Color.White
+        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
+        dgvParfum.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        dgvParfum.ColumnHeadersHeight = 35
+        dgvParfum.EnableHeadersVisualStyles = False
+        dgvParfum.GridColor = Color.Gainsboro
+        dgvParfum.Location = New Point(20, 60)
+        dgvParfum.Name = "dgvParfum"
+        dgvParfum.ReadOnly = True
+        dgvParfum.RowHeadersVisible = False
+        dgvParfum.RowHeadersWidth = 51
+        DataGridViewCellStyle2.Padding = New Padding(5)
+        DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(234), CByte(242), CByte(251))
+        DataGridViewCellStyle2.SelectionForeColor = Color.Black
+        dgvParfum.RowsDefaultCellStyle = DataGridViewCellStyle2
+        dgvParfum.RowTemplate.Height = 30
+        dgvParfum.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        dgvParfum.Size = New Size(750, 250)
+        dgvParfum.TabIndex = 2
+        ' 
+        ' gbEdit
+        ' 
+        gbEdit.BackColor = Color.White
+        gbEdit.Controls.Add(lblIdEdit)
+        gbEdit.Controls.Add(txtIdEdit)
+        gbEdit.Controls.Add(lblNamaEdit)
+        gbEdit.Controls.Add(txtNamaEdit)
+        gbEdit.Controls.Add(lblMerkEdit)
+        gbEdit.Controls.Add(txtMerkEdit)
+        gbEdit.Controls.Add(lblHargaEdit)
+        gbEdit.Controls.Add(numHargaEdit)
+        gbEdit.Controls.Add(lblStokEdit)
+        gbEdit.Controls.Add(numStokEdit)
+        gbEdit.Controls.Add(lblNotesEdit)
+        gbEdit.Controls.Add(txtNotesEdit)
+        gbEdit.Controls.Add(pbGambarEdit)
+        gbEdit.Controls.Add(btnPilihGambarEdit)
+        gbEdit.Controls.Add(btnUpdate)
+        gbEdit.Controls.Add(btnDelete)
+        gbEdit.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        gbEdit.Location = New Point(20, 330)
+        gbEdit.Name = "gbEdit"
+        gbEdit.Size = New Size(750, 380)
+        gbEdit.TabIndex = 3
+        gbEdit.TabStop = False
+        gbEdit.Text = "Ubah & Hapus Data"
+        ' 
+        ' lblIdEdit
+        ' 
+        lblIdEdit.AutoSize = True
+        lblIdEdit.Font = New Font("Segoe UI", 9.0F)
+        lblIdEdit.Location = New Point(20, 40)
+        lblIdEdit.Name = "lblIdEdit"
+        lblIdEdit.Size = New Size(74, 20)
+        lblIdEdit.TabIndex = 0
+        lblIdEdit.Text = "ID Parfum"
+        ' 
+        ' txtIdEdit
+        ' 
+        txtIdEdit.BackColor = Color.WhiteSmoke
+        txtIdEdit.BorderStyle = BorderStyle.FixedSingle
+        txtIdEdit.Font = New Font("Segoe UI", 9.0F)
+        txtIdEdit.Location = New Point(130, 37)
+        txtIdEdit.Name = "txtIdEdit"
+        txtIdEdit.ReadOnly = True
+        txtIdEdit.Size = New Size(100, 27)
+        txtIdEdit.TabIndex = 1
+        ' 
+        ' lblNamaEdit
+        ' 
+        lblNamaEdit.AutoSize = True
+        lblNamaEdit.Font = New Font("Segoe UI", 9.0F)
+        lblNamaEdit.Location = New Point(20, 80)
+        lblNamaEdit.Name = "lblNamaEdit"
+        lblNamaEdit.Size = New Size(99, 20)
+        lblNamaEdit.TabIndex = 2
+        lblNamaEdit.Text = "Nama Parfum"
+        ' 
+        ' txtNamaEdit
+        ' 
+        txtNamaEdit.BorderStyle = BorderStyle.FixedSingle
+        txtNamaEdit.Font = New Font("Segoe UI", 9.0F)
+        txtNamaEdit.Location = New Point(130, 77)
+        txtNamaEdit.Name = "txtNamaEdit"
+        txtNamaEdit.Size = New Size(250, 27)
+        txtNamaEdit.TabIndex = 3
+        ' 
+        ' lblMerkEdit
+        ' 
+        lblMerkEdit.AutoSize = True
+        lblMerkEdit.Font = New Font("Segoe UI", 9.0F)
+        lblMerkEdit.Location = New Point(20, 120)
+        lblMerkEdit.Name = "lblMerkEdit"
+        lblMerkEdit.Size = New Size(42, 20)
+        lblMerkEdit.TabIndex = 4
+        lblMerkEdit.Text = "Merk"
+        ' 
+        ' txtMerkEdit
+        ' 
+        txtMerkEdit.BorderStyle = BorderStyle.FixedSingle
+        txtMerkEdit.Font = New Font("Segoe UI", 9.0F)
+        txtMerkEdit.Location = New Point(130, 117)
+        txtMerkEdit.Name = "txtMerkEdit"
+        txtMerkEdit.Size = New Size(250, 27)
+        txtMerkEdit.TabIndex = 5
+        ' 
+        ' lblHargaEdit
+        ' 
+        lblHargaEdit.AutoSize = True
+        lblHargaEdit.Font = New Font("Segoe UI", 9.0F)
+        lblHargaEdit.Location = New Point(20, 160)
+        lblHargaEdit.Name = "lblHargaEdit"
+        lblHargaEdit.Size = New Size(50, 20)
+        lblHargaEdit.TabIndex = 6
+        lblHargaEdit.Text = "Harga"
+        ' 
+        ' numHargaEdit
+        ' 
+        numHargaEdit.BorderStyle = BorderStyle.FixedSingle
+        numHargaEdit.Font = New Font("Segoe UI", 9.0F)
+        numHargaEdit.Location = New Point(130, 158)
+        numHargaEdit.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
+        numHargaEdit.Name = "numHargaEdit"
+        numHargaEdit.Size = New Size(150, 27)
+        numHargaEdit.TabIndex = 7
+        ' 
+        ' lblStokEdit
+        ' 
+        lblStokEdit.AutoSize = True
+        lblStokEdit.Font = New Font("Segoe UI", 9.0F)
+        lblStokEdit.Location = New Point(20, 200)
+        lblStokEdit.Name = "lblStokEdit"
+        lblStokEdit.Size = New Size(38, 20)
+        lblStokEdit.TabIndex = 8
+        lblStokEdit.Text = "Stok"
+        ' 
+        ' numStokEdit
+        ' 
+        numStokEdit.BorderStyle = BorderStyle.FixedSingle
+        numStokEdit.Font = New Font("Segoe UI", 9.0F)
+        numStokEdit.Location = New Point(130, 198)
+        numStokEdit.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
+        numStokEdit.Name = "numStokEdit"
+        numStokEdit.Size = New Size(100, 27)
+        numStokEdit.TabIndex = 9
+        ' 
+        ' lblNotesEdit
+        ' 
+        lblNotesEdit.AutoSize = True
+        lblNotesEdit.Font = New Font("Segoe UI", 9.0F)
+        lblNotesEdit.Location = New Point(20, 240)
+        lblNotesEdit.Name = "lblNotesEdit"
+        lblNotesEdit.Size = New Size(48, 20)
+        lblNotesEdit.TabIndex = 10
+        lblNotesEdit.Text = "Notes"
+        ' 
+        ' txtNotesEdit
+        ' 
+        txtNotesEdit.BorderStyle = BorderStyle.FixedSingle
+        txtNotesEdit.Font = New Font("Segoe UI", 9.0F)
+        txtNotesEdit.Location = New Point(130, 237)
+        txtNotesEdit.Multiline = True
+        txtNotesEdit.Name = "txtNotesEdit"
+        txtNotesEdit.Size = New Size(250, 100)
+        txtNotesEdit.TabIndex = 11
+        ' 
+        ' pbGambarEdit
+        ' 
+        pbGambarEdit.BackColor = Color.WhiteSmoke
+        pbGambarEdit.BorderStyle = BorderStyle.FixedSingle
+        pbGambarEdit.Location = New Point(420, 37)
+        pbGambarEdit.Name = "pbGambarEdit"
+        pbGambarEdit.Size = New Size(200, 200)
+        pbGambarEdit.SizeMode = PictureBoxSizeMode.Zoom
+        pbGambarEdit.TabIndex = 12
+        pbGambarEdit.TabStop = False
+        ' 
+        ' btnPilihGambarEdit
+        ' 
+        btnPilihGambarEdit.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        btnPilihGambarEdit.Cursor = Cursors.Hand
+        btnPilihGambarEdit.FlatAppearance.BorderSize = 0
+        btnPilihGambarEdit.FlatStyle = FlatStyle.Flat
+        btnPilihGambarEdit.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold)
+        btnPilihGambarEdit.Location = New Point(420, 250)
+        btnPilihGambarEdit.Name = "btnPilihGambarEdit"
+        btnPilihGambarEdit.Size = New Size(200, 35)
+        btnPilihGambarEdit.TabIndex = 15
+        btnPilihGambarEdit.Text = "Ubah Gambar"
+        btnPilihGambarEdit.UseVisualStyleBackColor = False
+        ' 
+        ' btnUpdate
+        ' 
+        btnUpdate.BackColor = Color.DodgerBlue
+        btnUpdate.Cursor = Cursors.Hand
+        btnUpdate.FlatAppearance.BorderSize = 0
+        btnUpdate.FlatStyle = FlatStyle.Flat
+        btnUpdate.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnUpdate.ForeColor = Color.White
+        btnUpdate.Location = New Point(630, 245)
+        btnUpdate.Name = "btnUpdate"
+        btnUpdate.Size = New Size(100, 40)
+        btnUpdate.TabIndex = 13
+        btnUpdate.Text = "UPDATE"
+        btnUpdate.UseVisualStyleBackColor = False
+        ' 
+        ' btnDelete
+        ' 
+        btnDelete.BackColor = Color.Crimson
+        btnDelete.Cursor = Cursors.Hand
+        btnDelete.FlatAppearance.BorderSize = 0
+        btnDelete.FlatStyle = FlatStyle.Flat
+        btnDelete.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnDelete.ForeColor = Color.White
+        btnDelete.Location = New Point(630, 295)
+        btnDelete.Name = "btnDelete"
+        btnDelete.Size = New Size(100, 40)
+        btnDelete.TabIndex = 14
+        btnDelete.Text = "HAPUS"
+        btnDelete.UseVisualStyleBackColor = False
+        ' 
+        ' ErrorProvider1
+        ' 
+        ErrorProvider1.ContainerControl = Me
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(240), CByte(244), CByte(248))
+        ClientSize = New Size(800, 800)
+        Controls.Add(TabControl1)
+        Controls.Add(MenuStrip1)
+        Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        FormBorderStyle = FormBorderStyle.FixedDialog
+        MainMenuStrip = MenuStrip1
+        Name = "Form1"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "Aplikasi Manajemen Toko Parfum"
+        MenuStrip1.ResumeLayout(False)
+        MenuStrip1.PerformLayout()
+        TabControl1.ResumeLayout(False)
+        tpTambah.ResumeLayout(False)
+        tpTambah.PerformLayout()
+        CType(numHargaBaru, ComponentModel.ISupportInitialize).EndInit()
+        CType(numStokBaru, ComponentModel.ISupportInitialize).EndInit()
+        CType(pbGambarBaru, ComponentModel.ISupportInitialize).EndInit()
+        tpDaftar.ResumeLayout(False)
+        tpDaftar.PerformLayout()
+        CType(dgvParfum, ComponentModel.ISupportInitialize).EndInit()
+        gbEdit.ResumeLayout(False)
+        gbEdit.PerformLayout()
+        CType(numHargaEdit, ComponentModel.ISupportInitialize).EndInit()
+        CType(numStokEdit, ComponentModel.ISupportInitialize).EndInit()
+        CType(pbGambarEdit, ComponentModel.ISupportInitialize).EndInit()
+        CType(ErrorProvider1, ComponentModel.ISupportInitialize).EndInit()
+        ResumeLayout(False)
+        PerformLayout()
 
     End Sub
 

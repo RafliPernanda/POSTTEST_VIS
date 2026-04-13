@@ -22,7 +22,7 @@ Module DataModule
         Return dt
     End Function
 
-    ' Simpan (Tanpa ID karena Auto Increment)
+    ' Simpan 
     Public Function SimpanParfum(nama As String, merk As String, harga As Decimal, stok As Integer, notes As String, gambar As String) As Boolean
         Try
             Dim query As String = "INSERT INTO parfum (nama_parfum, merk, harga, stok, notes, gambar_path) " &

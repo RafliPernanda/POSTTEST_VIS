@@ -37,4 +37,14 @@ Module ValidationModule
 
         Return namaValid And merkValid And hargaValid And stokValid
     End Function
+
+    Public Function ValidasiGambar(ep As ErrorProvider, pb As PictureBox, path As String, pesan As String) As Boolean
+        If String.IsNullOrEmpty(path) OrElse Not IO.File.Exists(path) Then
+            ep.SetError(pb, pesan)
+            Return False
+        Else
+            ep.SetError(pb, "")
+            Return True
+        End If
+    End Function
 End Module
